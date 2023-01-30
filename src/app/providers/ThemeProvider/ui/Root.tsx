@@ -1,7 +1,7 @@
-import React, { Suspense } from "react";
+import { Suspense } from "react";
 import { Link, Outlet } from "react-router-dom";
-import "../styles/index.scss";
-import { useTheme } from "../theme/useTheme";
+import { useTheme } from "../lib/useTheme";
+import "app/styles/index.scss";
 
 function Root() {
   const { theme, toggleTheme } = useTheme();

@@ -1,0 +1,1 @@
+(()=>{function o(o){return void 0===o&&(o="Noname"),console.log("hello, ".concat(o)),o}o("Egor"),o("Zhenya")})();

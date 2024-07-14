@@ -1,10 +1,10 @@
 .navbar {
-    width: 100%;
     height: var(--navbar-height);
-    background-color: var(--inverted-bg-color);
+    background-color: var(--navbar-color);
     display: flex;
     align-items: center;
     padding: 10px;
+    border-bottom: var(--navbar-border);
 
     .links {
         display: flex;

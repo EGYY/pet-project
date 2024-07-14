@@ -1,0 +1,29 @@
+.Sidebar {
+  width: var(--sidebar-width);
+  height: calc(100vh - var(--navbar-height));
+  background-color: var(--sidebar-color);
+  position: relative;
+  transition: width 0.25s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  border-right: var(--sidebar-border);
+}
+
+.collapsed {
+  width: var(--sidebar-width-collapsed);
+}
+
+.switchers {
+    position: absolute;
+    bottom: var(--navbar-height);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.collapseButton {
+    margin-top: 20px;
+}

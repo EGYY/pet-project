@@ -1,9 +1,15 @@
 .app.light {
-    --bg-color: #fff;
-    --inverted-bg-color: #333;
+  --bg-color: #f4f4f4;
 
-    --primary-color: #484848;
-    --secondary-color: #d7d7d7;
-    --inverted-primary-color: #ffffff;
-    --inverted-secondary-color: #4b64fc;
+  --primary-color: #252844;
+  --secondary-color: #4348bd;
+  
+  --navbar-color: #040802;
+  --navbar-border: none;
+  --sidebar-color: #e8e8e9;
+  --sidebar-border: none;
+
+  .blured-circle {
+    display: none;
+  }
 }

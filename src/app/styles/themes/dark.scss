@@ -1,9 +1,25 @@
 .app.dark {
-    --bg-color: #333;
-    --inverted-bg-color: #fff;
+  --bg-color: #040802;
 
-    --primary-color: #ffffff;
-    --secondary-color: #4b64fc;
-    --inverted-primary-color: #484848;
-    --inverted-secondary-color: #d7d7d7;
+  --primary-color: #ffffff;
+  --secondary-color: #bfe82d;
+
+  --navbar-color: #040802;
+  --navbar-border: 1px solid rgba(24, 25, 24, 1);
+  --sidebar-color: #00000066;
+  --sidebar-border: 1px solid rgba(24, 25, 24, 1);
+
+  .blured-circle {
+    display: block;
+
+    &.bottom {
+      bottom: 20px;
+      left: 40px;
+    }
+
+    &.top {
+      top: 20%;
+      right: 40px;
+    }
+  }
 }

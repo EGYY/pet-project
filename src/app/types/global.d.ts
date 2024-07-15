@@ -1,6 +1,6 @@
-declare module "*.module.scss";
-declare module "*.svg" {
-    import * as React from "react";
+declare module '*.module.scss';
+declare module '*.svg' {
+    import * as React from 'react';
 
     const ReactComponent: React.FunctionComponent<
         React.SVGProps<SVGSVGElement> & { title?: string }
@@ -8,3 +8,5 @@ declare module "*.svg" {
 
     export default ReactComponent;
 }
+
+declare const __IS_DEV__: boolean;

@@ -1,1 +1,1 @@
-export { Router } from "react-router-dom";
+export { Router } from './ui/Router';

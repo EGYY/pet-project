@@ -7,7 +7,7 @@ interface LanguageSwitcherProps {
 }
 
 export const LanguageSwitcher = ({ className }: LanguageSwitcherProps) => {
-    const { i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const changeLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
         i18n.changeLanguage(e.target.value);
@@ -20,8 +20,8 @@ export const LanguageSwitcher = ({ className }: LanguageSwitcherProps) => {
             onChange={changeLanguage}
             defaultValue={localStorage.getItem('lng') || 'ru'}
         >
-            <option value="en">English</option>
-            <option value="ru">Русский</option>
+            <option value="en">{t('English')}</option>
+            <option value="ru">{t('Russian')}</option>
         </select>
     );
 };

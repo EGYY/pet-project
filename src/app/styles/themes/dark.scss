@@ -1,13 +1,11 @@
 .app.dark {
   --bg-color: #040802;
-
-  --primary-color: #ffffff;
+  --primary-color: #fff;
   --secondary-color: #bfe82d;
-
   --navbar-color: #040802;
-  --navbar-border: 1px solid rgba(24, 25, 24, 1);
-  --sidebar-color: #00000066;
-  --sidebar-border: 1px solid rgba(24, 25, 24, 1);
+  --navbar-border: 1px solid rgb(24 25 24 / 100%);
+  --sidebar-color: #0006;
+  --sidebar-border: 1px solid rgb(24 25 24 / 100%);
 
   .blured-circle {
     display: block;

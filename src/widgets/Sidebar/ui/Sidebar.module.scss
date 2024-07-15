@@ -14,16 +14,16 @@
 }
 
 .switchers {
-    position: absolute;
-    bottom: var(--navbar-height);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  bottom: var(--navbar-height);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .collapseButton {
-    margin-top: 20px;
+  margin-top: 20px;
 }

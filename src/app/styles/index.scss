@@ -1,20 +1,19 @@
-@import "./variables/global.scss";
-@import "./reset.scss";
-@import "./themes/light.scss";
-@import "./themes/dark.scss";
+@import "./variables/global";
+@import "./reset";
+@import "./themes/light";
+@import "./themes/dark";
 
 .app {
-  font: var(--font-m);
-
-  background-color: var(--bg-color);
-  color: var(--primary-color);
   min-height: 100vh;
+  color: var(--primary-color);
+  font: var(--font-m);
+  background-color: var(--bg-color);
 }
 
 .content-page {
-  display: flex;
-  z-index: 1;
   position: relative;
+  z-index: 1;
+  display: flex;
 }
 
 .page-wrapper {
@@ -27,11 +26,12 @@
   width: 265px;
   height: 200px;
   border-radius: 50% 22% 40% 80%;
-  filter: blur(100px);
-  background: radial-gradient(
-    circle at 50% 50%,
-    rgba(191, 232, 45, 1),
-    rgba(191, 232, 45, 1)
-  );
+  background:
+    radial-gradient(
+      circle at 50% 50%,
+      rgb(191 232 45 / 100%),
+      rgb(191 232 45 / 100%)
+    );
   opacity: 0.2;
+  filter: blur(100px);
 }

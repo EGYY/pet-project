@@ -4,6 +4,8 @@ import styles from './Button.module.scss';
 
 export enum ButtonTheme {
     GHOST = 'ghost',
+    BORDERED = 'bordered',
+    FILLED = 'filled'
 }
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {

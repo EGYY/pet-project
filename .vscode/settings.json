@@ -34,4 +34,5 @@
         "source.fixAll.stylelint": true
     },
     "stylelint.config": null,
+    "i18n-ally.keystyle": "nested",
 }

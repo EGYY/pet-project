@@ -12,7 +12,7 @@ module.exports = {
     ],
     overrides: [
         {
-            files: ['global.d.ts', '**/src/**/*.test.{ts, tsx}'],
+            files: ['global.d.ts', '*.test.tsx', '*.test.ts'],
             rules: {
                 'no-undef': 'off',
                 'i18next/no-literal-string': 'off'
@@ -54,8 +54,7 @@ module.exports = {
         'linebreak-style': 'off',
         'react/button-has-type': 'off',
         'react/jsx-props-no-spreading': 'off',
-        'i18next/no-literal-string': ['error', { markupOnly: true, onlyAttribute: [''] }]
-
+        'i18next/no-literal-string': ['error', { markupOnly: true, onlyAttribute: ['']}]
     },
     globals: {
         __IS_DEV__: true,

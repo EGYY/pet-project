@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { cls } from 'shared/lib/classNames/classNames';
-import { Button } from 'shared/ui';
+import { Button, ButtonTheme } from 'shared/ui';
 import MenuWithRightArrowIcon from 'shared/assets/icons/menu-unfold-3-line.svg';
 import MenuWithLeftArrowIcon from 'shared/assets/icons/menu-unfold-4-line.svg';
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher';
@@ -29,6 +29,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
                 data-testid="sidebar-toggle-button"
                 onClick={toggle}
                 className={styles.collapseButton}
+                theme={ButtonTheme.GHOST}
             >
                 {collapsed ? (
                     <MenuWithRightArrowIcon fill="var(--primary-color)" width={25} />

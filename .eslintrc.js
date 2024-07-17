@@ -12,9 +12,10 @@ module.exports = {
     ],
     overrides: [
         {
-            files: ['global.d.ts', '*.ts', '*.tsx', '*.js', '*.jsx'],
+            files: ['global.d.ts', '**/src/**/*.test.{ts, tsx}'],
             rules: {
                 'no-undef': 'off',
+                'i18next/no-literal-string': 'off'
             },
         },
     ],

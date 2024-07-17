@@ -1,7 +1,7 @@
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { Options } from './types/configTypes';
 
 export function configPlugins(
@@ -20,5 +20,6 @@ export function configPlugins(
             __IS_DEV__: JSON.stringify(options.isDev),
         }),
         new webpack.HotModuleReplacementPlugin(),
+        new BundleAnalyzerPlugin({ openAnalyzer: options.isDev }),
     ];
 }

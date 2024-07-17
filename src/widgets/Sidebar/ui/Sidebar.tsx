@@ -20,11 +20,16 @@ export const Sidebar = ({ className }: SidebarProps) => {
 
     return (
         <div
+            data-testid="sidebar"
             className={cls(styles.Sidebar, { [styles.collapsed]: collapsed }, [
                 className,
             ])}
         >
-            <Button onClick={toggle} className={styles.collapseButton}>
+            <Button
+                data-testid="sidebar-toggle-button"
+                onClick={toggle}
+                className={styles.collapseButton}
+            >
                 {collapsed ? (
                     <MenuWithRightArrowIcon fill="var(--primary-color)" width={25} />
                 ) : (

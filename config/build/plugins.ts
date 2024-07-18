@@ -7,7 +7,7 @@ import { Options } from './types/configTypes';
 export function configPlugins(
     options: Options,
 ): webpack.WebpackPluginInstance[] {
-    return [
+    const plugins = [
         new webpack.ProgressPlugin(),
         new HtmlWebpackPlugin({
             template: options.paths.html,
@@ -19,7 +19,11 @@ export function configPlugins(
         new webpack.DefinePlugin({
             __IS_DEV__: JSON.stringify(options.isDev),
         }),
-        new webpack.HotModuleReplacementPlugin(),
-        new BundleAnalyzerPlugin({ openAnalyzer: options.isDev }),
     ];
+    if (options.isDev) {
+        plugins.push(new webpack.HotModuleReplacementPlugin());
+        plugins.push(new BundleAnalyzerPlugin({ openAnalyzer: options.isDev }));
+    }
+
+    return plugins;
 }

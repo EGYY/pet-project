@@ -18,7 +18,9 @@
     "storybook": "start-storybook -p 6006 -c ./config/storybook",
     "storybook:build": "build-storybook -c ./config/storybook"
   },
-  "author": "EGYY",
+  "author": {
+    "name": "EGYY"
+  },
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.17.5",
@@ -88,9 +90,6 @@
     "react-router-dom": "^6.2.1"
   },
   "loki": {
-    "looks-same": {
-      "ignoreCaret": true
-    },
     "configurations": {
       "chrome.laptop": {
         "target": "chrome.docker",

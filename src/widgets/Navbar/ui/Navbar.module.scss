@@ -6,3 +6,14 @@
   padding: 10px;
   border-bottom: var(--navbar-border);
 }
+
+.actionButtons {
+  margin-left: auto;
+
+  .authButton {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font: var(--font-m);
+  }
+}

@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from 'shared/contexts';
 import { ErrorBoundary } from 'app/providers/ErrorBoundary';
 import { App } from './app/App';
+import './app/styles/index.scss';
 
 render(
     <BrowserRouter>
@@ -12,5 +13,5 @@ render(
             </ThemeProvider>
         </ErrorBoundary>
     </BrowserRouter>,
-    document.getElementById('app'),
+    document.getElementById('root'),
 );

@@ -18,9 +18,15 @@ export const STORAGE_THEME_KEY = 'theme';
 
 const defaultTheme = (localStorage.getItem('theme') as Theme) || Theme.LIGHT;
 
-export const ThemeProvider: FC = (props) => {
-    const { children } = props;
-    const [theme, setTheme] = useState<Theme>(defaultTheme);
+document.body.className = defaultTheme;
+
+interface ThemeProviderProps {
+    initialTheme?: Theme
+}
+
+export const ThemeProvider: FC<ThemeProviderProps> = (props) => {
+    const { children, initialTheme } = props;
+    const [theme, setTheme] = useState<Theme>(initialTheme || defaultTheme);
 
     const defaultProps = useMemo(() => ({
         theme,

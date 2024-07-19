@@ -28,7 +28,8 @@ module.exports = {
     plugins: [
         'react',
         '@typescript-eslint',
-        'i18next'
+        'i18next',
+        'react-hooks'
     ],
     rules: {
         'react/jsx-indent': [2, 4],
@@ -50,7 +51,9 @@ module.exports = {
         'linebreak-style': 'off',
         'react/button-has-type': 'off',
         'react/jsx-props-no-spreading': 'off',
-        'i18next/no-literal-string': ['error', { markupOnly: true, onlyAttribute: ['']}]
+        'i18next/no-literal-string': ['error', { markupOnly: true, onlyAttribute: ['']}],
+        'react-hooks/rules-of-hooks': 'error',
+        'react-hooks/exhaustive-deps': 'warn'
     },
     globals: {
         __IS_DEV__: true,
